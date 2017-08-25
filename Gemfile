@@ -7,6 +7,8 @@ gem 'rake'
 gem 'otr-activerecord'
 gem 'pg'
 
+gem 'mongoid'
+
 group :development, :test do
   gem 'rspec'
   gem 'rspec-its'

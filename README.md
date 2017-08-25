@@ -3,7 +3,7 @@
 1. Install Ruby 2.2.x
 2. `$ bundle install`
 3. `$ cp ./config/database_sample.yml ./config/database.yml`
-4. `$ psql -c "create database tax_reporter_dev;"`
+4. `$ psql -c "create database multiple_complexy_dev;"`
 5. `$ bundle exec rake db:migrate`
 
 ## Running

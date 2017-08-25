@@ -2,9 +2,11 @@
 
 1. Install Ruby 2.2.x
 2. `$ bundle install`
-3. `$ cp ./config/database_sample.yml ./config/database.yml`
-4. `$ psql -c "create database multiple_complexy_dev;"`
-5. `$ bundle exec rake db:migrate`
+3. `$ cp ./config/database.sample.yml ./config/database.yml`
+4. `$ cp ./config/mongoid.sample.yml ./config/mongoid.yml`
+5. `$ psql -c "create database multiple_complexy_dev;"`
+6. `$ bundle exec rake db:migrate`
+7. `$ bundle exec rake db:seed`
 
 ## Running
 
@@ -12,4 +14,5 @@
 
 ## Testing
 
-1. `bundle exec rspec`
+1. `$ psql -c "create database multiple_complexy_test;"`
+2. `bundle exec rspec`

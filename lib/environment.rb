@@ -20,3 +20,5 @@ require_relative "environments/#{$ENV}"
 ActiveSupport::Dependencies.autoload_paths << File.expand_path('../', __FILE__)
 
 OTR::ActiveRecord.configure_from_file!('config/database.yml')
+
+Mongoid.load!('config/mongoid.yml', $ENV)

@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  database: multiple_complexy
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: multiple_complexy_dev
+
+test:
+  <<: *default
+  database: multiple_complexy_test
+
+production:
+  <<: *default
+  database: multiple_complexy_production

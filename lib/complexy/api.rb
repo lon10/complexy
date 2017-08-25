@@ -12,6 +12,11 @@ module Complexy
       get do
         Storage::User.all
       end
+
+      desc 'Read user'
+      get ':id' do
+        Storage::User.find(params[:id])
+      end
     end
 
     namespace :activities do

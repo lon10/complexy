@@ -13,6 +13,7 @@ module Complexy
 
       private
 
+      # TODO: move to some factory or else
       def build_domain(user_storage)
         Complexy::Domain::User.new(user_storage.id, user_storage.first_name, user_storage.last_name)
       end

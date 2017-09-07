@@ -1,5 +1,7 @@
 describe Complexy::API do
   describe 'GET /api' do
+    let!(:user) { FactoryGirl.create(:user) }
+
     it 'should greet us' do
       get '/api'
 

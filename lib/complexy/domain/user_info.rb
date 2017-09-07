@@ -4,10 +4,8 @@ module Complexy
   	  :id,
   	  :first_name,
   	  :last_name,
-  	  :action,
-  	  :lat,
-  	  :long,
-  	  :created_at
+  	  :activities
   	)
+    end
   end
 end

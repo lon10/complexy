@@ -5,5 +5,6 @@ module Complexy
   	  :first_name,
   	  :last_name
   	)
+    end
   end
 end

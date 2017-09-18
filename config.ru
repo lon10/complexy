@@ -1,4 +1,4 @@
-require_relative 'lib/environment'
+require_relative 'app/environment'
 
 use OTR::ActiveRecord::ConnectionManagement
 

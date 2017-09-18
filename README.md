@@ -15,4 +15,5 @@
 ## Testing
 
 1. `$ psql -c "create database multiple_complexy_test;"`
-2. `bundle exec rspec`
+2. `$ RACK_ENV=test bundle exec rake db:migrate`
+3. `bundle exec rspec`

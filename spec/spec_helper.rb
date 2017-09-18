@@ -7,11 +7,12 @@ require 'pry'
 require 'factory_girl'
 require 'database_cleaner'
 
-require_relative '../lib/environment'
+require_relative '../app/environment'
 
 require 'support/factories'
 
 DatabaseCleaner.strategy = :truncation
+DatabaseCleaner[:mongoid].strategy = :truncation
 
 RSpec.configure do |config|
   config.include Rack::Test::Methods
@@ -24,6 +25,10 @@ RSpec.configure do |config|
 
   config.before(:suite) do
     DatabaseCleaner.clean_with(:truncation)
+  end
+
+  config.before(:each) do
+    DatabaseCleaner.start
   end
 
   def app

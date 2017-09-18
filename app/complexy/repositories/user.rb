@@ -11,6 +11,10 @@ module Complexy
       	build_domain(Complexy::Storage::User.find(id))
       end
 
+      def update(id, first_name, last_name)
+        Complexy::Storage::User.update(id, first_name: first_name, last_name: last_name)
+      end
+
       private
 
       # TODO: move to some factory or else

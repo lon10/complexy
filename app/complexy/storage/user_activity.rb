@@ -1,6 +1,8 @@
 module Complexy
   module Storage
     class UserActivity
+      TABLE_NAME = 'complexy_storage_user_activities'
+
       ACTIVITY_TYPES = [
       	'milked a cow',
       	'Sawed wood',

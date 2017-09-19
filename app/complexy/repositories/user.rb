@@ -11,6 +11,11 @@ module Complexy
       	build_domain(Complexy::Storage::User.find(id))
       end
 
+      def find_by_signature(first_name, last_name)
+        user = Complexy::Storage::User.find_by_first_name_and_last_name(first_name, last_name)
+        build_domain(user)
+      end
+
       def update(id, first_name, last_name)
         Complexy::Storage::User.update(id, first_name: first_name, last_name: last_name)
       end
